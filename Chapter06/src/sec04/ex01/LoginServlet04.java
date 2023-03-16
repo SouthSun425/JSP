@@ -38,7 +38,7 @@ public class LoginServlet04 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		System.out.println("doGet 메소드 호출");
 		doHandle(request, response);
 	}
@@ -66,9 +66,12 @@ public class LoginServlet04 extends HttpServlet {
 		
 		String data = "<html>";
 		data += "</body>";
+		data += ":: doHandle에서 출력 ";
+		data += "<br>";
 		data += "아이디 : " + user_id;
 		data += "<br>";
 		data += "비밀번호 : " + user_pw;
+		data += "<br>";
 		
 		
 		data += "</body>";
